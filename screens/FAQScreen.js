@@ -1,8 +1,7 @@
 import { ScrollView, Text } from 'react-native';
 import { Avatar, Card, ListItem } from 'react-native-elements';
-import * as Animatable from 'react-native-animatable';
 
-function FAQ() {
+function Faq() {
     return (
         <Card>
             <Card.Title>FAQ</Card.Title>
@@ -43,12 +42,12 @@ function FAQ() {
     );
 }
 
-const FAQScreen = () => {
+const FaqScreen = () => {
     return (
         <ScrollView>
-            <FAQ />
+            <Faq />
         </ScrollView>
     );
 };
 
-export default FAQScreen;
+export default FaqScreen;

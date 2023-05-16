@@ -9,7 +9,7 @@ import {
 import HomeScreen from './HomeScreen';
 import AboutScreen from './AboutScreen';
 import ContactScreen from './ContactScreen';
-import FAQScreen from './FaqScreen';
+import FaqScreen from './FaqScreen';
 import { Icon } from 'react-native-elements';
 import logo from '../assets/images/logo.png';
 import { useDispatch } from 'react-redux';
@@ -89,13 +89,13 @@ const ContactNavigator = () => {
     );
 };
 
-const FAQNavigator = () => {
+const FaqNavigator = () => {
     const Stack = createStackNavigator();
     return (
         <Stack.Navigator screenOptions={screenOptions}>
             <Stack.Screen
                 name='FAQ'
-                component={FAQScreen}
+                component={FaqScreen}
                 options={({ navigation }) => ({
                     title: 'Frequently Asked Questions',
                     headerLeft: () => (
@@ -192,7 +192,7 @@ const Main = () => {
                 />
                 <Drawer.Screen
                     name='FAQ'
-                    component={FAQNavigator}
+                    component={FaqNavigator}
                     options={{
                         title: 'FAQ',
                         drawerIcon: ({ color }) => (
